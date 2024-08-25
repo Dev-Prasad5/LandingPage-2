@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+body {
+    /* font-family: 'Arial', sans-serif; */
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    
+}
+
+header {
+    
+    color: white;
+    text-align: center;
+    padding: 20px 50px;
+}
+
+header h1 {
+    font-size: 3.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+h2{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    font-size: 2em;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.abtus{
+    color: white;
+}
+.cta-button {
+    background-color: #f44336;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    margin-top: 25px;
+    
+}
+
+.cta-button:hover {
+    background-color: #a81616;
+}
+
+.container {
+    width: 90%;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#features, #about, #testimonials, #contact {
+    padding: 40px 20px;
+}
+
+#features h2, #about h2, #testimonials h2, #contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.feature-box, .testimonial-box {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+
+margin: 20px;
+    flex: 1;
+}
+
+.testimonial-box {
+    font-style: italic;
+}
+
+#features .container, #testimonials .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Contact Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, form textarea {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    width: auto;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .feature-box, .testimonial-box {
+        margin: 10px;
+        flex-basis: calc(100% - 20px);
+    }
+}
+
+@media (min-width: 750px) {
+    .feature-box {
+        margin: 10px;
+        flex-basis: calc(30% - 60px);
+    }
+}
